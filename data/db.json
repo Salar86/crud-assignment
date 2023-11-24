@@ -1,0 +1,44 @@
+{
+  "api": [
+    {
+      "id": 1,
+      "age": "33",
+      "name": "Nicklas Dannevang",
+      "playerNumber": "1",
+      "position": "GK",
+      "team": "1st"
+    },
+    {
+      "id": 2,
+      "age": "20",
+      "name": "Phillip Banda",
+      "playerNumber": "2",
+      "position": "DF",
+      "team": "1st"
+    },
+    {
+      "id": 3,
+      "age": "27",
+      "name": "Souheib Dhaflaoui",
+      "playerNumber": "10",
+      "position": "MF",
+      "team": "1st"
+    },
+    {
+      "id": 4,
+      "age": "25",
+      "name": "Christina Kese Jensen",
+      "playerNumber": "1",
+      "position": "GK",
+      "team": "N-HG"
+    },
+    {
+      "id": 5,
+      "age": "22",
+      "name": "Julia Hjørlunde Hansen",
+      "playerNumber": "4",
+      "position": "DF",
+      "team": "N-HG"
+    }
+  ]
+}
