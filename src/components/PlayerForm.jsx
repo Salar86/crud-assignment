@@ -40,7 +40,6 @@ function PlayerForm({ blankPlayer, playerToEdit, mutatePlayer }) {
     console.log("submit", player)
     mutatePlayer(player)
   }
-    //callback function fra app.jsx,som enten indsætter ny person (hvis id er tom) el opdaterer (hvis id != "")
 
   }
   return (
@@ -118,7 +117,7 @@ function PlayerForm({ blankPlayer, playerToEdit, mutatePlayer }) {
             value={player.position}
             onChange={handleChange}
           >
-            <option disabled>Select Position</option>
+            <option disabled value={""}>Select Position</option>
             <option value="GK">Goalkeeper</option>
             <option value="DF">Defender</option>
             <option value="MF">Midfielder</option>
@@ -137,7 +136,7 @@ function PlayerForm({ blankPlayer, playerToEdit, mutatePlayer }) {
             value={player.team}
             onChange={handleChange}
           >
-            <option disabled>Select Team</option>
+            <option disabled value={""}>Select Team</option>
             <option value="1st">First Team</option>
             <option value="N-HG">Næstved HG</option>
             <option value="U19">Under 19</option>
