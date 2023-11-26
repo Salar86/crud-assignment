@@ -26,7 +26,7 @@ function PlayerList({players, deletePlayerById, editPlayer}) {
                     <td>{player.position}</td>
                     <td>{player.team}</td>
                     <td>
-                        <button type="button" className="btn btn-warning" onClick={() => editPlayer(player)}>Edit</button>
+                        <button type="button" className="btn btn-warning edit-button" onClick={() => editPlayer(player)}>Edit</button>
                         <button type="button" className="btn btn-danger"  onClick={() => deletePlayerById(player.id)}>Delete</button>
                     </td>
                     </tr>

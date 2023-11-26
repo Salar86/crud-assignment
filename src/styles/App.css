@@ -5,13 +5,13 @@ body {
 .navbar  {
     background-color: #048f5a; 
 }
-   
-.container {
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
-  }
+
 
 .update-button {
     background-color: #048f5a; 
     color: white; 
   }
+
+.edit-button {
+    color: white
+}
