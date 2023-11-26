@@ -1,0 +1,18 @@
+body {
+    background-color: #c2e1cf;
+}
+  
+.navbar  {
+    background-color: #048f5a; /* Set a darker green color for the navbar */
+    color: white; /* Set text color to white */
+}
+   
+.container {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+  }
+
+.update-button {
+    background-color: #048f5a; /* Set background color to #048f5a for the update button */
+    color: white; /* Set text color to white for the update button */
+  }

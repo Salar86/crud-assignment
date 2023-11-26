@@ -3,7 +3,7 @@
 function PlayerList({players, deletePlayerById, editPlayer}) {
     return ( 
         <div>
-            <h1>List of players</h1>
+            <h2>List of players</h2>
             <table className="table table-striped">
     <thead>
         <tr>

@@ -48,15 +48,53 @@ function App() {
     setPlayers([...players.filter(p => p.id != playerId)])
   }
 
+  function countPlayersByTeam(team) {
+    return players.filter(player => player.team === team).length;
+  }
+
   useEffect(() => {
     getPlayers((data) => setPlayers(data))
   }, []);
 
   return (
-    <div>
-      <h1>Player DB</h1>
-      <PlayerList players={players} deletePlayerById={deletePlayerById} editPlayer={editPlayer}/>
-      <PlayerForm blankPlayer={blankPlayer} playerToEdit={playerToEdit} mutatePlayer={mutatePlayer}/>
+    <div className='container'>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <span className="navbar-brand">
+          <img src="src/assets/NIF.png"
+           alt="NIF Logo" 
+           width="60" 
+           height="60" 
+           className="d-inline-block align-top" /></span>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <span className="nav-link">Total Players: {players.length}</span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link">First Team: {countPlayersByTeam('1st')}</span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link">Næstved HG: {countPlayersByTeam('N-HG')}</span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link">Under 19: {countPlayersByTeam('U19')}</span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link">Under 17: {countPlayersByTeam('U17')}</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="row">
+        <div className="col-lg-8">
+          <h1>Næstved IF Player Database</h1>
+          <PlayerList players={players} deletePlayerById={deletePlayerById} editPlayer={editPlayer} />
+        </div>
+
+        <div className="col-lg-4">
+          <PlayerForm blankPlayer={blankPlayer} playerToEdit={playerToEdit} mutatePlayer={mutatePlayer} />
+        </div>
+      </div>
     </div>
   )
 }
