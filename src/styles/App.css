@@ -3,8 +3,7 @@ body {
 }
   
 .navbar  {
-    background-color: #048f5a; /* Set a darker green color for the navbar */
-    color: white; /* Set text color to white */
+    background-color: #048f5a; 
 }
    
 .container {
@@ -13,6 +12,6 @@ body {
   }
 
 .update-button {
-    background-color: #048f5a; /* Set background color to #048f5a for the update button */
-    color: white; /* Set text color to white for the update button */
+    background-color: #048f5a; 
+    color: white; 
   }
